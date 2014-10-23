@@ -5,6 +5,20 @@ public class PlayerMobility : MonoBehaviour {
 
 	public float speed = 400.0f; //just a test
 
+	// last part
+	Animator anim;
+
+	void Start(){
+		anim = GetComponent<Animator> ();
+	}
+
+	void Update(){
+		if (Input.GetMouseButtonDown (0)) {
+			anim.SetTrigger("Attack");	
+		}
+	}
+	//end last part 
+
 	// Fixed Update because we are using Physics
 	void FixedUpdate(){ 
 		// capture mouse position. We need to convert between pixels and World Unities
@@ -23,6 +37,7 @@ public class PlayerMobility : MonoBehaviour {
 
 		// MOVEMENT
 		// this because moving foward means moving in the Z axis, but this is a topdown game!
+		// obs.: we still need to press up/down arrows to move!
 		float input = Input.GetAxis ("Vertical"); //Input.GetAxis ("Mouse X");
 		rigidbody2D.AddForce (gameObject.transform.up * speed  * input );
 
