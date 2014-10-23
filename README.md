@@ -5,6 +5,8 @@ Unity3D + C# + Hotline Miami + Top Down + Game + 2D
 ---
 Demo created following the Unity3D live training published on 21 May 2014.
 
+Website: http://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/top-down-2d
+
 Youtube link: https://www.youtube.com/watch?v=uv2QSvuwIDs
 
 Video Description: You've probably seen the sample 2D assets, 
